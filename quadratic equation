@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<math.h>
+//xp=when equation has been added. xs=when equation has been subtracted//
+//d = square root part of the equation//
+main()
+{
+	int a,b,c,xp,xs,d;
+	printf ("Enter Intergral Value\n");
+	scanf  ("%d %d %d",&a,&b,&c);
+	d=sqrt(b*b-4*a*c);
+	xp=-b+d/2*a;
+	xs=-b-d/2*a;
+	if (d<0)
+	{
+		printf("\nWALTER ERROR");
+	}else
+	{
+	printf ("\nValue of x=%d \nOR",&xp);
+	printf ("\nValue of x=%d",&xs);
+}
+return 0;
+}
